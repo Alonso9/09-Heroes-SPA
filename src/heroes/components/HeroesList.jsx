@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { HeroeCard } from './HeroeCard';
 import { getHeroesByPubliser } from '../helpers';
 
 
 export const HeroesList = ( {publisher} ) => {
-    const heroes = getHeroesByPubliser( publisher);
+    const heroes = useMemo(()=>getHeroesByPubliser( publisher), [publisher]) 
   return (
         <div className='row rows-cols-1 row-cols-md-3 g-3'>
             {

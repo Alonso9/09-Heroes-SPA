@@ -1,5 +1,7 @@
 # React + Vite
 
+The Extensions using during this project are ES7+ React/Redux/React-Native snippets and Simple icons
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
