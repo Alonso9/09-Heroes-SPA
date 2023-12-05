@@ -8,7 +8,9 @@ export const LoginPage = () => {
 
   const onLogin = () => {
     login("Alonso Giron"); // Llamamos al login y como espera el usuario o nombre le pasamos ese contexto
-    navigate('/', {
+
+    const lastPath = localStorage.getItem('lastPath') || '/';  // Del localStorage sacamos el ultimo path que se vistio y si hace login lo mandamos ahi si existe
+    navigate(lastPath, {
       replace: true
     })
   }

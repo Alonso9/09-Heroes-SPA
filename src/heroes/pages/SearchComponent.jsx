@@ -68,7 +68,7 @@ export const SearchComponent = () => {
           } */}
 
           <div className="alert alert-primary animate__animated animate__wobble" style={{display: showSearch ? '': 'none'}}>
-            Search a hero
+          <i class="fa-solid fa-magnifying-glass">Search</i>
           </div>
 
           <div className="alert alert-danger animate__animated animate__wobble" style={{display: showError ? '' : 'none'}}>
